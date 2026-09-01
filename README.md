@@ -1,19 +1,23 @@
-markdown# 🛡️ Manual Testing Portfolio - LinkedIn Authentication Module
+markdown## 🎯 Test Strategy & Scope
 
-## 📝 Overview
-This repository contains my manual testing portfolio focused on the authentication and login functionalities of the LinkedIn web application. The goal was to identify critical functional, UI, and edge-case defects.
+This section outlines the strategic approach used to verify the authentication module. The focus was to ensure high security, data integrity, and a seamless user experience across different setups.
 
-## ⚙️ Environment Details
-- **OS:** Windows 11 Home
-- **Browser:** Google Chrome (Latest Version)
-- **Device:** Desktop
+### 1. In Scope 
+*   **Functional Testing:** Valid and invalid login combinations, password masking, error message triggers, and session persistence.
+*   **UI/UX Testing:** Alignment of input fields, responsiveness of button elements, typography visibility, and screen zoom behavior.
+*   **Boundary Value Analysis (BVA):** Character limits for email input fields and extreme password lengths.
 
-## 📊 Testing Artifacts
-- **[Test Plan & Strategy](link-catre-un-google-doc-sau-sheet):** Explaining the scope of testing, techniques used (Boundary Value Analysis, Equivalence Partitioning), and pass/fail criteria.
-- **[Test Cases](link-catre-google-sheets):** A spreadsheet containing 30+ executed test cases for login, password reset, and registration.
+### 2. Out of Scope 
+*   Performance testing under peak user traffic simulation.
+*   Multi-Factor Authentication (MFA) via live hardware security keys.
+*   Database-level encryption verification.
+*   ### 3. Test Environment
+*   **Operating System:** Windows 11 Home
+*   **Browser:** Google Chrome (Desktop Version)
+*   **Network:** Broadband Wi-Fi (Standard domestic connection)
 
-## 🐛 Bug Tracking
-All discovered defects have been formally documented and are tracked in the **Issues** section of this repository. 
-- Total Bugs Found: X
-- High Severity: Y
-- Low/UI Severity: Z
+### 4. Defect Triage & Severity Criteria
+*   **Critical:** Application crashes, server-side dynamic breakdowns, or security leaks.
+*   **High:** Core flows blocked with no alternative workaround (e.g., dynamic password locks).
+*   **Medium:** Secondary feature malfunction with operational workarounds available.
+*   **Low:** Visual misalignment, font truncation, or localization spelling mistakes.
