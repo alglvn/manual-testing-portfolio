@@ -1,4 +1,4 @@
-markdown## 🎯 Test Strategy & Scope
+Test Strategy & Scope
 
 This section outlines the strategic approach used to verify the authentication module. The focus was to ensure high security, data integrity, and a seamless user experience across different setups.
 
