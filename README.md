@@ -11,7 +11,8 @@ This section outlines the strategic approach used to verify the authentication m
 *   Performance testing under peak user traffic simulation.
 *   Multi-Factor Authentication (MFA) via live hardware security keys.
 *   Database-level encryption verification.
-*   ### 3. Test Environment
+
+### 3. Test Environment
 *   **Operating System:** Windows 11 Home
 *   **Browser:** Google Chrome (Desktop Version)
 *   **Network:** Broadband Wi-Fi (Standard domestic connection)
