@@ -1,0 +1,8 @@
+Executed Test Cases
+
+| Test Case ID | Component | Title / Summary | Pre-conditions | Test Steps | Test Data | Expected Result | Actual Result | Status |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| **TC_001** | Login | Verify successful login with valid credentials | User has a registered and active account. | 1. Go to login page.<br>2. Enter email.<br>3. Enter password.<br>4. Click Sign In. | `valid_user@email.com`<br>`ValidPass123!` | User is authenticated and redirected to dashboard. | User successfully logged in. | **PASSED** ✅ |
+| **TC_002** | Login | Verify error message when entering an incorrect password | User has a registered account. | 1. Go to login page.<br>2. Enter email.<br>3. Enter wrong password.<br>4. Click Sign In. | `valid_user@email.com`<br>`WrongPassword999` | Login fails. Inline error "That's not the right password" is shown. | Login failed with the expected error message. | **PASSED** ✅ |
+| **TC_003** | Login | Verify validation triggers when submitting empty credentials | None | 1. Go to login page.<br>2. Leave fields empty.<br>3. Click Sign In. | None | Form blocked. Red error validation text appears under both inputs. | Submission blocked with field validation messages. | **PASSED** ✅ |
+| **TC_004** | UI | Verify Sign-In button layout rendering at high zoom levels | None | 1. Go to login page.<br>2. Set zoom to 175%.<br>3. Inspect Sign-in button. | Browser Zoom = 175% | Button text dynamically scales and stays centered without clipping. | Text overflows container and gets cut off at the bottom. | **FAILED** ❌ |
