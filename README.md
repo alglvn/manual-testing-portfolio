@@ -37,7 +37,7 @@ This section outlines the strategic approach used to verify the authentication m
     *   **Test Data:** `valid_user@email.com` / `ValidPass123!`
     *   **Expected Result:** User is successfully authenticated and redirected to the home feed dashboard.
     *   **Actual Result:** Authentication fails, keeping the user on the login section with the error message: “That’s not the right password.”
-    *   **Status:** **FAILED** ❌ *(See Bug Report #1)*
+    *   **Status:** **FAILED** ❌ *(See Bug Report #1 under Issues)*
 
 *   **TC_002: Verify error message when entering an incorrect password (Negative Path)**
     *   **Component:** Login
@@ -74,4 +74,4 @@ This section outlines the strategic approach used to verify the authentication m
     *   **Test Data:** Browser Zoom = 175%
     *   **Expected Result:** The button text container dynamically adjusts alignment and keeps font scaling fully centered without content clipping.
     *   **Actual Result:** The button width stays fixed. The text overflows the blue container boundaries, extending into the landing page background and getting cut off vertically at the baseline.
-    *   **Status:** **FAILED** ❌ *(See Bug Report #2)*
+    *   **Status:** **FAILED** ❌ *(See Bug Report #2 under Issues)*
